@@ -52,7 +52,7 @@ main {
   padding: 20px;
   margin-top: 50px;
   text-align: center;
-  min-height: 450px;
+  min-height: 550px;
 }
 
 .faq {
@@ -127,12 +127,12 @@ main {
   transition: all 0.5s;
 }
 
-/* Media query for more 540px */
+/* Media query for more than 540px */
 
 @media screen and (min-width: 540px) {
   .accordion {
     width: 900px;
-    min-height: 300px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -165,7 +165,8 @@ main {
     left: 0;
   }
   .content {
-    margin: 0 30px;
+    margin: 0 30px 30px;
     width: 300px;
+    height: 500px;
   }
 }
