@@ -1,11 +1,10 @@
-import { useState } from 'react';
 import {
   MdOutlineKeyboardArrowDown,
   MdOutlineKeyboardArrowUp,
 } from 'react-icons/md';
 
-function Question({ data, index }) {
-  const [showInfo, setShowInfo] = useState(false);
+function Question({ data, openedBox, setOpenedBox }) {
+  const showInfo = openedBox === data.id;
 
   const icon = showInfo ? (
     <MdOutlineKeyboardArrowUp />
@@ -14,9 +13,15 @@ function Question({ data, index }) {
   );
 
   const element = showInfo ? <h4>{data.title}</h4> : <p>{data.title}</p>;
+
   const handleClick = () => {
-    setShowInfo(!showInfo);
+    if (showInfo) {
+      setOpenedBox(null);
+    } else {
+      setOpenedBox(data.id);
+    }
   };
+
   return (
     <div className="questions-container" key={data.id}>
       <div className="question">
@@ -26,7 +31,7 @@ function Question({ data, index }) {
         </button>
       </div>
       <div className="answer">
-        <p>{showInfo && data.info}</p>
+        <p>{showInfo ? data.info : null}</p>
       </div>
     </div>
   );
