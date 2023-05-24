@@ -1,172 +1,179 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  outline: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
 }
 
 :root {
-  --very-dark-blue: hsl(238, 29%, 16%);
-  --soft-red: hsl(14, 88%, 65%);
-  --soft-violet: hsl(273, 75%, 66%);
-  --soft-blue: hsl(240, 73%, 65%);
-  --very-dark-grayish-blue: hsl(237, 12%, 33%);
-  --Dark-grayish-blue: hsl(240, 6%, 50%);
-  --Light-grayish-blue: hsl(240, 5%, 91%);
+    --very-dark-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    --Light-grayish-blue: hsl(240, 5%, 91%);
 }
 
 body {
-  font-family: 'Kumbh Sans', sans-serif;
-  font-size: 12px;
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(var(--soft-violet), var(--soft-blue));
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(var(--soft-violet), var(--soft-blue));
 }
 
 main {
-  position: relative;
+    position: relative;
 }
 
 .mobile-woman {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: -115px;
-  right: 0;
-  left: 0;
-  margin: auto;
+    width: 215px;
+    height: 215px;
+    position: absolute;
+    top: -115px;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .accordion {
-  background: #fff;
-  width: 400px;
-  max-width: 80%;
-  border-radius: 30px;
-  margin: auto;
-  padding: 20px;
-  margin-top: 50px;
-  text-align: center;
-  min-height: 550px;
+    background: #fff;
+    width: 400px;
+    max-width: 80%;
+    border-radius: 30px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    min-height: 550px;
+    background-image: url(/src/images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .faq {
-  margin: 90px 0 20px;
+    margin: 90px 0 20px;
 }
 
 .question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .line {
-  background: var(--Dark-grayish-blue);
-  height: 0.1px;
-  margin: 20px 0;
+    background: #e8e8ea;
+    height: 1px;
+    margin: 20px 0;
 }
 
 .answer {
-  text-align: start;
+    text-align: start;
 }
 
 .answer p {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 
 .question p,
 .answer p {
-  width: 90%;
-  text-align: start;
+    width: 90%;
+    text-align: start;
 }
 
 .btn {
-  border: none;
-  background: transparent;
-  color: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+    border: none;
+    background: transparent;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .desk-woman {
-  display: none;
+    display: none;
 }
 
 .box {
-  display: none;
+    display: none;
 }
 
 .mobile-woman-shadow {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  left: 0;
-  margin: auto;
-  transform: rotate(90deg);
-  /* do this later */
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transform: rotate(90deg);
+    /* do this later */
 }
 
 .contents {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
 }
 
 .contents.show {
-  height: auto;
-  max-height: 999px;
-  transition: all 0.5s;
+    height: auto;
+    max-height: 999px;
+    transition: all 0.5s;
 }
+
 
 /* Media query for more than 540px */
 
 @media screen and (min-width: 540px) {
-  .accordion {
-    width: 900px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .desk-woman {
-    display: flex;
-    width: 350px;
-    height: 350px;
-    object-fit: contain;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    left: 40px;
-  }
-  .mobile-woman {
-    display: none;
-  }
-  .faq {
-    text-align: start;
-  }
-  .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    bottom: -40px;
-    margin: auto 0;
-    left: 0;
-  }
-  .content {
-    margin: 0 30px 30px;
-    width: 300px;
-    height: 500px;
-  }
+    .accordion {
+        width: 1000px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-image: url(/src/images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: 400% 65%;
+    }
+    .desk-woman {
+        display: flex;
+        width: 360px;
+        height: 360px;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        left: 40px;
+    }
+    .mobile-woman {
+        display: none;
+    }
+    .faq {
+        text-align: start;
+    }
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        bottom: -40px;
+        margin: auto 0;
+        left: 0;
+    }
+    .content {
+        margin: 0 30px 30px;
+        width: 300px;
+        height: 500px;
+    }
 }
