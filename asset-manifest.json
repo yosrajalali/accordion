@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/accordion/static/css/main.9bb3b7bb.css",
+    "main.js": "/accordion/static/js/main.594b223b.js",
+    "static/media/illustration-woman-online-mobile.svg": "/accordion/static/media/illustration-woman-online-mobile.fe928f9c476ef6d332672b3ab38268fd.svg",
+    "static/media/illustration-woman-online-desktop.svg": "/accordion/static/media/illustration-woman-online-desktop.843eb114c7213a596ee246bf87f27008.svg",
+    "static/media/illustration-box-desktop.svg": "/accordion/static/media/illustration-box-desktop.ec1ba14b853c562a663728483bac4824.svg",
+    "static/media/bg-pattern-desktop.svg": "/accordion/static/media/bg-pattern-desktop.f51e07a2f52390c60484.svg",
+    "index.html": "/accordion/index.html",
+    "static/media/bg-pattern-mobile.svg": "/accordion/static/media/bg-pattern-mobile.55aee9128a769eedabec.svg",
+    "main.9bb3b7bb.css.map": "/accordion/static/css/main.9bb3b7bb.css.map",
+    "main.594b223b.js.map": "/accordion/static/js/main.594b223b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bb3b7bb.css",
+    "static/js/main.594b223b.js"
+  ]
+}
